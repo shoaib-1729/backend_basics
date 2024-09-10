@@ -1,0 +1,12 @@
+{
+  "name": "backend_basics",
+  "version": "1.0.0",
+  "description": "- Node js fundamentals\r - Express js\r - MongoDB Database\r - MongoDB ORM (mongoose)\r - Core Concepts / Working\r - Practical Implementation\r ## Badges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "chap_01",
+    "version": "1.0.0",
+    "description": "backend basics",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Shoaib Akhtar",
+    "license": "ISC"
+}
