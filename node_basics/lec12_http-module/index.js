@@ -1,11 +1,16 @@
-// OS Module
-import os from "os"
+import http from "http";
 
-// console.log(os.platform());
-// console.log(os.arch());
-// console.log(os.cpus());
-// console.log(os.hostname());
-// console.log(os.homedir());
-// console.log(os.networkInterfaces());
-console.log(os.freemem());
-console.log(os.totalmem());
+// creating web server using http
+const server = http.createServer((req, res) => {
+    res.setHeader("Content-Type", "text/plain")
+    res.end("Response from Sever")
+})
+
+// making the port and host dynamic
+const PORT = process.env.PORT || 8000;
+const HOST = "localhost";
+
+// listening on port
+server.listen(PORT, HOST, () => {
+    console.log("Server is running at http://localhost:8000");
+})
