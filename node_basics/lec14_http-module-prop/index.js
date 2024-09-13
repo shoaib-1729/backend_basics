@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     // res.statusCode = 202;
     // res.statusMessage = "Good";
     // res.setHeader("Content-Type", "text/plain")
-    // set the above three at one
+    // set the above three at once
     res.writeHead("202", "Good", { "Content-Type": "text/plain" })
     res.end("Response from Sever")
 })
