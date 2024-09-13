@@ -1,16 +1,19 @@
-import http from "http";
+// DNS Module
+import dns from "dns";
 
-// creating web server using http
-const server = http.createServer((req, res) => {
-    res.setHeader("Content-Type", "text/plain")
-    res.end("Response from Sever")
+// lookup method
+dns.lookup("geekyshows.com", (error, address, family) => {
+    if (error) {
+        throw error;
+    }
+    console.log(address);
+    console.log(family);
 })
 
-// making the port and host dynamic
-const PORT = process.env.PORT || 8000;
-const HOST = "localhost";
-
-// listening on port
-server.listen(PORT, HOST, () => {
-    console.log("Server is running at http://localhost:8000");
+// resolve method
+dns.resolve('youtube.com', 'NS', (error, records) => {
+    if (error) {
+        throw error;
+    }
+    console.log(records);
 })
