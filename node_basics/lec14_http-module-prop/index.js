@@ -2,7 +2,19 @@ import http from "http";
 
 // creating web server using http
 const server = http.createServer((req, res) => {
-    res.setHeader("Content-Type", "text/plain")
+    // request
+    // console.log(req.url);
+    if (req.url !== "/favicon.ico") {
+        console.log(req.url);
+    }
+    // request method
+    // console.log(req.method);
+    // response
+    // res.statusCode = 202;
+    // res.statusMessage = "Good";
+    // res.setHeader("Content-Type", "text/plain")
+    // set the above three at one
+    res.writeHead("202", "Good", { "Content-Type": "text/plain" })
     res.end("Response from Sever")
 })
 
