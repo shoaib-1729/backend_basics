@@ -1,0 +1,22 @@
+{
+    "name": "lec02_setup-babel",
+    "version": "1.0.0",
+    "description": "To install dependencies:",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel src -w --out-dir prd",
+        "dev-serve": "nodemon prd/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "5.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.25.6",
+        "@babel/core": "^7.25.2",
+        "@babel/preset-env": "^7.25.4",
+        "nodemon": "^3.1.5"
+    }
+}
