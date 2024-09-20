@@ -133,7 +133,7 @@ app.route("/student")
 // app.put("/student/update", (req, res) => {
 //     res.send("Student Updated")
 // });
-// app.delete("/student/all", (req, res) => {
+// app.delete("/student/delete", (req, res) => {
 //     res.send("Student Deleted")
 // });
 
@@ -147,7 +147,7 @@ app.route("/student")
 // app.put("/teacher/update", (req, res) => {
 //     res.send("Teacher Updated")
 // });
-// app.delete("/teacher/all", (req, res) => {
+// app.delete("/teacher/delete", (req, res) => {
 //     res.send("Teacher Deleted")
 // });
 
