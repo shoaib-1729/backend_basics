@@ -123,14 +123,14 @@ app.route("/student")
 
 // Messy Code (Need of router middleware)
 
-// All Teacher Routes
-// app.get("/teacher/all", (req, res) => {
+// All Student Routes
+// app.get("/student/all", (req, res) => {
 //     res.send("All Student")
 // });
-// app.post("/teacher/create", (req, res) => {
+// app.post("/student/create", (req, res) => {
 //     res.send("New student Created")
 // });
-// app.put("/teacher/update", (req, res) => {
+// app.put("/student/update", (req, res) => {
 //     res.send("Student Updated")
 // });
 // app.delete("/student/all", (req, res) => {
