@@ -44,6 +44,7 @@ app.get("/student/all", (req, res) => {
 
 // Query String
 // yaha pe path same rahega, query string path mei nahi count hoti, woh bss url pr hit kari jaati hai
+// kuch aise url hoga: http://localhost:3000/grocery?category=cleaning&page=1
 app.get("/grocery", (req, res) => {
         const { category, page } = req.query
         res.send(`Response OK for groceries in category:${category} and page ${page}`)
