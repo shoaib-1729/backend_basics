@@ -41,6 +41,17 @@ app.get("/student/all", (req, res) => {
 //         res.send(`Response OK for distance between: ${cityOne} and ${cityTwo}`)
 //     })
 
+// app.param
+app.param(["id", "name"], (req, res, next) => {
+    console.log(`Param called once for each route parameter`)
+        // call the next middleware
+    next()
+})
+app.get("/user/:id/:name", (req, res) => {
+    const { id, name } = req.params;
+    res.send(`Response OK of user with id:${id} and name:${name}`)
+})
+
 
 // Query String
 // yaha pe path same rahega, query string path mei nahi count hoti, woh bss url pr hit kari jaati hai
