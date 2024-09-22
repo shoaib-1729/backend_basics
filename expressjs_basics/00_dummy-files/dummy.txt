@@ -1,0 +1,16 @@
+// const express = require("express");
+import express from 'express';
+import web from "./routes/web.js"
+
+// create server
+const app = express()
+    // port
+const PORT = process.env.PORT || "3000"
+
+// load router
+app.use("/", web)
+
+// listen at port
+app.listen(PORT, () => {
+    console.log(`Server is listening at port http://localhost:${PORT}`);
+})
