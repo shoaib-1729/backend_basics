@@ -1,0 +1,51 @@
+<!-- include ejs header file -->
+<%- include ("partials/header.ejs") %>
+    <h1>Home Page</h1>
+    <p>This is Home Page</p>
+    <h3>
+        <!-- display variable in ejs -->
+        <%= title %>
+            <%= name %>
+                <%= marks %>
+                    <!-- comments in ejs -->
+                    <%# This EJS Comment is not rendered in HTML %>
+                        <!-- initializing variable -->
+                        <!-- <% let i =14; %> -->
+                        <!-- conditionals in EJS -->
+                        <!-- <% if(i == 10) { %>
+                                <%= i %>
+                                    <% } else if(i==11) { %>
+                                        <%= i %>
+                                            <% } else { %>
+                                                <%= i  %>
+                                                    <% } %> -->
+                        <!-- loop -->
+                        <!-- for loop -->
+                        <!-- <% for(i=0; i<=4; i++) { %>
+                                                            <%= i %>
+                                                                <%= marks[i] %>
+                                                                    <%  } %> -->
+                        <!-- while loop -->
+                        <!-- <% while (count <= 4) { %>
+                            <%= count %>
+                                <% count++; %>
+                                    <% } %> -->
+                        <!-- for-in loop -->
+                        <!-- <% for (key in marks) { %>
+                            <%= key %>
+                                <%= marks[key] %>
+                                    <% } %> -->
+                        <!-- for-of loop -->
+                        <% for (val of marks) { %>
+                            <%= val %>
+                                <% } %>
+                                    <!-- for each loop -->
+                                    <% marks.forEach(function(value, index) { %>
+                                        <%= value %>
+                                            <%= index %>
+                                                <% }) %>
+                                                    <!-- function in js -->
+                                                    <!-- Do it yourself -->
+    </h3>
+    <!-- include files using ejs -->
+    <%- include ("partials/footer.ejs") %>
